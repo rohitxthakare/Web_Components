@@ -1,0 +1,94 @@
+.container {
+    width: 100%;
+    height: 97vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-side {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: top 0.5s ease;
+    
+    /* transform: translateY(0);
+    transition: transform 0.5s ease; */
+}
+
+.left-side>.info-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-side>.info-slide>h1 {
+    margin: 0;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.left-side>.info-slide>p {
+    padding: 0 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.right-side {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transition: top 0.5s ease;
+
+    /* transform: translateY(0);
+    transition: transform 0.5s ease; */
+}
+
+.right-side>.image-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.right-side>.image-slide>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btns {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+
+    /* Removes the gap between buttons
+            caused by inline spacing in HTML */
+    font-size: 0;
+}
+
+.btns>.btn {
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btns>.btn.up-btn {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    transform: translateY(-50%);
+}
+
+.btns>.btn.down-btn {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    transform: translate(-200%, 50%);
+}

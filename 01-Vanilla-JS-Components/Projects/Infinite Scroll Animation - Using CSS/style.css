@@ -1,0 +1,72 @@
+/* Concept:
+        1) Duplicate the original content to create a seamless loop.
+        2) The container’s total width becomes exactly twice the width of the original content.
+        3) Continuously translate the container by 50% of its total width.
+        4) When the animation restarts (jumps back to the start), the duplicated content perfectly aligns with the original, masking the jump and creating a smooth infinite scrolling effect.
+        5) Note:- Spacings should be identical everywhere.
+*/
+
+.wrapper {
+    width: 100%;
+    height: 97vh;
+    overflow: hidden;
+
+    /* ------------------- */
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    /*crucial point*/
+    width: max-content;
+    /* width: calc( (300px + 10px + 2px + 2px) * 10 );  can also be written */
+    animation: scroll 10s linear infinite;
+}
+
+.slide {
+    /*crucial point*/
+    flex: 0 0 auto;
+    /* keep the slides of same sizes */
+    width: 300px;
+    height: 300px;
+
+    /* --------------------- */
+    border: 2px solid #000;
+    background: lightcoral;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightcoral;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+/* Alternate colors for visibility */
+.slide:nth-child(even) {
+    background: lightseagreen;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause on hover */
+.container:hover {
+    animation-play-state: paused;
+}
+
+@media screen and (max-width: 800px) {
+    .slide {
+        width: 150px;
+        height: 150px;
+    }
+}

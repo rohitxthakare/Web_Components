@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RohitxThakare">
+    <title>Random Choice Picker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images-icons/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Enter all of the choices seperated by a comma ( , )
+            <br>
+            Press <kbd style="color:white;">enter/submit</kbd> when you're done
+        </h3>
+        <div class="engines">
+            <label for="e1">Engine 1</label>
+            <input type="radio" name="engine" id="e1" value="1" checked>
+            <label for="e2">Engine 2</label>
+            <input type="radio" name="engine" id="e2" value="2">
+        </div>
+        <textarea name="Choices" id="textarea">Choice 1, Choice 2, Choice 3, ...</textarea>
+        <div class="tag-container"></div>
+        <button type="submit" class="btn">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

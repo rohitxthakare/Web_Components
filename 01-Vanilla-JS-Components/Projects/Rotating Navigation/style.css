@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.hamburger {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    z-index: 1;
+
+    transition: transform 1s ease-in-out;
+}
+
+.open {
+    position: absolute;
+    right: 45px;
+    bottom: 45px;
+}
+
+.close {
+    position: absolute;
+    left: 45px;
+    bottom: 45px;
+}
+
+.open,
+.close {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav {
+    width: 200px;
+    position: absolute;
+    bottom: 7vh;
+    left: 4vmin;
+}
+
+nav>ul>li {
+    list-style: none;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in-out;
+}
+
+nav>ul>li+li {
+    transform: translateX(-150%);
+}
+
+nav>ul>li+li+li {
+    transform: translateX(-200%);
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+nav>ul>li>a>svg {
+    width: 20px;
+}
+
+nav>ul>li>a>small {
+    padding-left: 10px;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* hides rotated overflow */
+    background-color: #333;
+}
+
+.content {
+    padding: 100px 20vw 80vh;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 170vh;
+    border: 2px solid black;
+    background-color: white;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    /* top: 0; */
+
+    transform-origin: 0 0;
+    transition: transform 1.2s ease, padding-bottom 1s ease 1.2s, height 1s ease 1.2s;
+}
+
+.hamburger.start {
+    transform: rotate(-90deg);
+}
+
+nav.start>ul>li {
+    list-style: none;
+    transform: translateX(0);
+}
+
+.content.start {
+    padding: 100px 20vw 80vh;
+    transform: rotate(-20deg);
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        bottom: 90px;
+        left: 15px;
+    }
+
+    .content.start {
+        padding: 100px 20vw 80vh;
+        transform: rotate(-20deg);
+    }
+}
+
+@media screen and (min-height: 1350px) {
+    .content {
+        padding: 100px 20vw 60vh;
+        height: 150vh;
+    }
+
+    .content.start {
+        padding: 100px 20vw 60vh;
+    }
+
+    nav {
+        width: 500px;
+        bottom: 20vh;
+        left: 5vh;
+    }
+
+    nav>ul>li>a {
+        margin: 40px;
+    }
+
+    nav>ul>li>a>svg {
+        width: 10%;
+    }
+}
+
+
+/* Fix Summary: 
+- Fixed the issue where .content was zooming out in desktop mode of mobile browsers.
+- Moved the rotating .content element inside a .wrapper container.
+- Applied overflow: hidden to the .wrapper to prevent content overflow during rotation.
+- Added overflow: hidden to the body to disable unwanted scrolling on mobile browsers.
+- Improved responsiveness across different screen sizes and other minor changes. */

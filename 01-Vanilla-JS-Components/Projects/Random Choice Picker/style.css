@@ -1,0 +1,55 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 14, 171);
+}
+
+.container h3 {
+    text-align: center;
+    color: yellow;
+}
+
+.engines {
+    color: #00ffa8;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+#textarea {
+    width: 20rem;
+    height: 6%;
+    padding: 10px;
+}
+
+.tag-container {
+    width: 20rem;
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    margin: 0 7px 10px 0;
+    padding: 5px 10px;
+    background-color: gold;
+    border-radius: 25px;
+}
+
+.btn {
+    margin: 10px 0 0;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: lightblue;
+}
+
+.final {
+    background-color: white;
+    transform: scale(1.13);
+    transition: transform 0.6s ease;
+}
