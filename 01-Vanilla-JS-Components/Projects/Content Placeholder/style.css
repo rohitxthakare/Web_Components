@@ -1,0 +1,139 @@
+.container {
+    width: 100%;
+    height: 97vh;
+
+    background-color: #ecf0f1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    width: 350px;
+    height: 75%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+#card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: 55%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.card-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    height: 10%;
+    margin: 15px 0 10px;
+}
+
+.card-title>h2 {
+    font-size: 18px;
+}
+
+.card-desc {
+    height: 12%;
+}
+
+.card-desc>p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.profile {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-img {
+    width: 10%;
+    height: 40%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.profile-date {
+    color: #777;
+}
+
+
+/* ------------------------ */
+
+.main-text {
+    height: 20%;
+}
+
+.sub-text {
+    height: 10%;
+}
+
+.skeleton-text {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.skeleton-text:last-child {
+    width: 80%;
+}
+
+.skeleton {
+    background-image: linear-gradient(to right,
+            #dcdfe3 0%,
+            #c5c7cc 10%,
+            #dcdfe3 20%,
+            #dcdfe3 100%);
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+
+
+@keyframes bgPos {
+    0% {
+        background-position: 50% 0;
+    }
+
+    100% {
+        background-position: -150% 0;
+    }
+}

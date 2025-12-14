@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RohitxThakare">
+    <title>Drag N Drop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images-icons/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <label for="img-input" id="img-drop-area">
+            <input type="file" accept="image/*" id="img-input" hidden>
+            <div class="img-container">
+                <img src="images-icons/upload-icon.svg" alt="upload">
+                <p><span class="text-bold">Click</span> to upload image <br> Or <span class="text-bold">Drag n
+                        drop</span> image to upload</p>
+            </div>
+        </label>
+
+        <div class="items">
+            <ul class="left-items">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+            <img src="images-icons/exchange.svg" alt="exchange">
+            <ul class="right-items">
+                <li>item 4</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
