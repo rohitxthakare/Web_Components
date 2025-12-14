@@ -288,6 +288,64 @@ Each project is a complete & working piece of UI.
                 </details>
             </td>
         </tr>
+        <tr>
+    <td>16</td>
+    <td>
+        <a
+            href="https://github.com/rohitxthakare/Web_Components/tree/main/01-Vanilla-JS-Components/Projects/Content%20Placeholder">
+            Content Placeholder
+        </a>
+    </td>
+    <td>
+        <a
+            href="https://rohitxthakare.github.io/Web_Components/01-Vanilla-JS-Components/Projects/Content%20Placeholder/">
+            Demo
+        </a>
+    </td>
+    <td>
+        <details>
+            <summary>HTML5, CSS3, JavaScript (ES6+)</summary>
+            <ul>
+                <li><strong>Skeleton loading:</strong> Animated placeholders using CSS gradients</li>
+                <li><strong>Async simulation:</strong> Promise + setTimeout to mimic API calls</li>
+                <li><strong>DOM manipulation:</strong> Replacing skeleton UI with real content</li>
+                <li><strong>CSS animations:</strong> Keyframes for shimmer loading effect</li>
+                <li><strong>UI/UX:</strong> Improves perceived performance during data fetch</li>
+                <li><strong>Layout:</strong> Card-based design with Flexbox alignment</li>
+                <li>More...</li>
+            </ul>
+        </details>
+    </td>
+</tr>
+<tr>
+    <td>17</td>
+    <td>
+        <a href="https://github.com/rohitxthakare/Web_Components/tree/main/01-Vanilla-JS-Components/Projects/Drag%20N%20Drop">
+            Drag N Drop
+        </a>
+    </td>
+    <td>
+        <a href="https://rohitxthakare.github.io/Web_Components/01-Vanilla-JS-Components/Projects/Drag%20N%20Drop/">
+            Demo
+        </a>
+    </td>
+    <td>
+        <details>
+            <summary>HTML5, CSS3, JavaScript (ES6+)</summary>
+            <ul>
+                <strong>HTML5 Drag & Drop events:</strong> dragstart, dragover, drop event handling
+                <li><strong>State tracking:</strong> Managing currently dragged list item</li>
+                <li><strong>Bi-directional transfer:</strong> Move items between two lists dynamically</li>
+                <li><strong>File drag & drop:</strong> Image upload with type validation</li>
+                <li><strong>Preview handling:</strong> Instant image preview using Object URLs</li>
+                <li><strong>UX patterns:</strong> Click-to-upload and drag-to-upload support</li>
+                <li><strong>DOM manipulation:</strong> appendChild for real-time updates</li>
+                <li>More...</li>
+            </ul>
+        </details>
+    </td>
+</tr>
+
     </tbody>
 </table>
 
