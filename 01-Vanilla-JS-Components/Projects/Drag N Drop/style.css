@@ -1,0 +1,80 @@
+/* Container */
+.container {
+    width: 100%;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Image upload area */
+#img-drop-area {
+    width: 60%;
+    height: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 2px dashed black;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-container > img {
+    width: max(20%, 100px);
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* Lists container */
+.items {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.items > img {
+    width: 8%;
+}
+
+/* Individual lists */
+.left-items,
+.right-items {
+    width: 30%;
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px dashed red;
+}
+
+/* List items */
+.left-items li,
+.right-items li {
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    background-color: darkviolet;
+    color: #fff;
+    border-left: 4px solid #e50914;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}

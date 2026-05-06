@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="RohitxThakare">
+  <title>Theme Clock</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images-icons/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="analog-container">
+      <hr class="hour hand">
+      <hr class="minute hand">
+      <hr class="second hand">
+      <div class="center-point"></div>
+
+      <div class="numbers">
+        <!-- Generate 12 numbers with rotation index -->
+        <div style="--i:1"><span>1</span></div>
+        <div style="--i:2"><span>2</span></div>
+        <div style="--i:3"><span>3</span></div>
+        <div style="--i:4"><span>4</span></div>
+        <div style="--i:5"><span>5</span></div>
+        <div style="--i:6"><span>6</span></div>
+        <div style="--i:7"><span>7</span></div>
+        <div style="--i:8"><span>8</span></div>
+        <div style="--i:9"><span>9</span></div>
+        <div style="--i:10"><span>10</span></div>
+        <div style="--i:11"><span>11</span></div>
+        <div style="--i:12"><span>12</span></div>
+      </div>
+    </div>
+
+    <div class="digital-container">
+        <div class="time"></div>
+        <div class="day-month"></div>
+    </div>
+
+    <button class="btn">Change Style</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RohitxThakare">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images-icons/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="timer-container">
+            <h1>Pomodoro Timer</h1>
+
+            <div class="timer">
+                <svg width="250" height="250" viewBox="0 0 250 250" style="--r:116" class="work">
+                    <circle cx="125" cy="125" r="115" fill="none" stroke-width="10" class="work" />
+                </svg>
+                <div class="time-text">
+                    <span id="minutes">25</span>:<span id="seconds">00</span>
+                    <span id="status">Work</span>
+                </div>
+            </div>
+
+            <div class="timer-inputs">
+                <input type="number" id="work-time" placeholder="Enter Work Time" min="1" max="99" oninput="resetTimer()">
+                <input type="number" id="break-time" placeholder="Enter Break Time" min="1" max="99" oninput="resetTimer()">
+            </div>
+
+            <div class=" controls">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
