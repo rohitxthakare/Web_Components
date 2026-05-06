@@ -325,6 +325,25 @@
                 </details>
             </td>
         </tr>
+       <tr>
+            <td>18</td>
+            <td><a href="https://github.com/rohitxthakare/Web_Components/tree/main/01-Vanilla-JS-Components/Projects/Typing%20Text%20Animation">Typing Text Animation</a></td>
+            <td><a href="https://rohitxthakare.github.io/Web_Components/01-Vanilla-JS-Components/Projects/Typing%20Text%20Animation/">Demo</a></td>
+            <td>
+                <details>
+                    <summary>HTML5, CSS3, JavaScript (ES6+)</summary>
+                    <ul>
+                        <li><strong>Dynamic string manipulation:</strong> Using substring to simulate typing and deleting characters.</li>
+                        <li><strong>Recursive timing logic:</strong> Using recursive timeouts to control typing speed, delays, and pauses.</li>
+                        <li><strong>State management:</strong> Using variables to track index, position, and delete state.</li>
+                        <li><strong>System theme detection:</strong> Using prefers-color-scheme to auto adapt UI themes.</li>
+                        <li><strong>CSS Custom Properties:</strong> Using CSS variables for scalable light and dark themes.</li>
+                        <li><strong>Advanced CSS animations:</strong> Creating blinking cursor using step-end keyframes.</li>
+                        <li>More...</li>
+                    </ul>
+                </details>
+            </td>
+        </tr>
     </tbody>
 </table>
 
